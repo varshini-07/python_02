@@ -1,0 +1,19 @@
+m1=float(input("first mark"))
+m2=float(input("second mark"))
+m3=float(input("third mark"))
+m4=float(input("fourth mark"))
+total=m1+m2+m3+m4
+average=total/4
+print("first mark: ",m1,"sceond mark: ",m2,"third mark: ",m3,"fourth mark: ",m4)
+print("total:",total)
+print("average: ",average)
+if average>75:
+    print("distinction")
+elif average<75 and average>=60:
+    print("first")
+elif average<60 and average>=50:
+    print("second")
+elif average<50 and average>40:
+    print("third")
+else:
+    print("fail") 
