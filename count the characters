@@ -1,0 +1,6 @@
+str=input("enter the string: ")
+count=0
+for i in str:
+    if i=="o":
+        count+=1
+print(f"there are {count} times o in given str")
