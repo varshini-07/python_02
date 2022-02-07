@@ -1,3 +1,10 @@
+#suppose cover price of a book is INR 24.95,but a bookstore offers a 40% discount. shiipping costs INR 3.00 for the first copy and 75 paise for each additional copy.
+what is the total wholesale cost for 60 copies ?
+
+
+
+
+
 bkcost=24.95
 numbooks=60.0
 def cost(numbooks):
