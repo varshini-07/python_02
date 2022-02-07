@@ -1,0 +1,23 @@
+#Develop an application that repeatedly reads numbers until the user enters "done". once "done" is entered, print out the total, count,average of the numbers.if the user enters anything other than 
+a number, detect their mistake using try and except and print an error message and skip to the next nuumber.
+
+
+
+total=0
+num=0
+average=0
+while True :
+    number=input("enter the number/done: ")
+    if number=="done":
+        break                                               
+    try:
+        num1=float(number)
+    except:
+        print("Invalid input")
+    num=num+1
+    total=total+num1
+    average=total/num
+print("\tRESULT")
+print("Total numbers: ",num)
+print("Total: ",total)
+print("Average: ",average)
