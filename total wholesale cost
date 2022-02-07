@@ -1,0 +1,8 @@
+bkcost=24.95
+numbooks=60.0
+def cost(numbooks):
+    bookcost=((bkcost*0.60)*numbooks)
+    shippingcost = (3.0 + (0.75*(numbooks-1)))
+    totalcost = shippingcost+bookcost
+    print("The total wholesale cost for 60 copies: ",totalcost)
+cost(numbooks)                             
