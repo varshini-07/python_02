@@ -1,0 +1,15 @@
+# develop an application to read through the email data and when you find line that starts with "From" , you will split the line into
+words using the split function. we are interested in who sent the massage, which is the second word on the From line.From stephen.marquard@uct.ac.za sat jan 5 09:14:16 2008.
+you will parse the From line and print out the second word for each From line, then you will also count the number of From (not From:) lines and print out a count at the end.
+
+
+fname=input("enter the filename: ")
+f=open(fname)
+count=0
+for line in f:
+    if (line.startswith ("From")):
+        s=line.split()
+        print(s[1:2])
+        count+=1                                     
+print(f"there are {count} lines in the file with from as starting word")    
+        
