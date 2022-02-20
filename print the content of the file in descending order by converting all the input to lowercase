@@ -1,0 +1,26 @@
+# develop an application that reads a file and prints the letters in decreasing order of frequency .your program should convert all the input to lowercase 
+and only count the letters a-z . your program should not count spaces,digits,punctuation, or anything other than the letters a-z. also, print the top N (N=10)wrds.
+
+
+
+s="BCA Association @ Bishop Heber college"
+n=3
+s=s.lower()
+s=s.replace(" ","")
+s=list(s)
+fs=[]
+for i in s:
+    if (i.isalpha()==True):
+        fs.append(i)
+count={}
+for i in fs:
+    if i in count:
+        count[i]=count[i]+1
+    else:
+        count[i]=1
+sd=dict(sorted(count.items(),key=lambda item:item[1],reverse=True))
+flag=0
+for i in sd:
+    if flag<n:
+        print(i,count[i])
+        flag+=1
