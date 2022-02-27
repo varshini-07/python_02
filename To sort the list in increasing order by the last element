@@ -1,0 +1,9 @@
+# develop a function sort_last().Given a list of non-empty tuples.return a list sorted in increasing order by the last element in each tuple.
+Eg [(1,7),(1,3),(3,4,5),(2,2)] yields [(2,2),(1,3),(3,4,5),(1,7)].hint: use a custom key=function to extract the last element form each tuple.
+
+def last(n):
+    return n[-1]
+def sort_list_last(tuples):
+    print("tuples before sorting: ",tuples)
+    return sorted(tuples,key=last)
+print("tuples after sorted: ",sort_list_last([(1,7),(1,3),(3,4,5),(2,2)]))
