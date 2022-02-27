@@ -1,0 +1,19 @@
+# develop an application that prompts the user for a list of numbers and prints out the maximum and minimum of the nubers at the end when the user enters "done".
+if the user enters anything other than a number , detect their mistake using try and except and print an error message and skip to the next number.The program 
+should store the numbers the user enters in a list and use the max() and min() functions to compute the maximum and minimum numbers after the loop completes.
+
+list=[]
+while True:
+    number=input("enter the number: ")
+    if number=="done":
+        break
+    try:
+        num=number
+        list.append(int(num))
+    except:
+        print("invalid input")
+    else:
+        largest=max(list)
+        smallest=min(list)
+print("maximum: ",largest)
+print("minimum: ",smallest) 
