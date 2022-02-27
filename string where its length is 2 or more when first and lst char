@@ -1,0 +1,15 @@
+# Given a list of strings, return the count of the number of strings where the string length is 2 or more and the first and last chars of the string are the same
+
+def elements(list):
+    count=0
+    for word in list:
+        if len(word)>1 and word[0]==word[-1]:
+            count+=1
+    return count
+list=[]
+num=int(input("how many elements: "))
+for i in range(1,num+1):
+    n=input("enter the string: ")
+    list.append(n)
+print("words: ",list)
+print("count of words with same starting and ending: ",elements(list)) 
